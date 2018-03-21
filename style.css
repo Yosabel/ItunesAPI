@@ -2,9 +2,59 @@ h1{
 font-size: 40px;
     font-family: "Courier New";
     text-align: center;
+    color: lightcyan;
 
 }
 body{
     background-color: darkcyan;
    text-align: center;
+
+}
+
+#buttongo{
+    background-color: lightcyan;
+    color:black;
+    border:none;
+    width: 150px;
+    height:50px;
+    font-family: "Courier New";
+
+}
+
+#result{
+    background-color: lightcyan;
+    color:black;
+    border:none;
+    width: 150px;
+    height:50px;
+    font-family: "Courier New";
+
+}
+#artist{
+    background-color: lightcyan;
+    color:black;
+    border:none;
+    width: 150px;
+    height:50px;
+    font-family: "Courier New";
+
+}
+table{
+    width: 100%;
+    font-size: large;
+}
+
+
+audio:hover, audio:focus, audio:active
+{
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+
+audio
+{
+    transition:all 0.5s linear;
+    box-shadow: 2px 2px 4px 0px #006773;
+    border-radius:7px 7px 7px 7px ;
 }
