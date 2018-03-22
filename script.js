@@ -33,7 +33,6 @@ function myFunction(data){
     list+="<td>" + 'Album' + "</td>";
     list+="<td>" + 'Song' + "</td>";
     list+="<td>" + 'Collection Price' + "</td>";
-    list+="<td>" + 'Currency' + "</td>";
     list+="<td>" + 'Rap Genius suggestions' + "</td>";
     list+="<td>" + 'Preview' + "</td>";
     list+="<td>" + 'Explicitness ranking' + "</td>";
@@ -44,11 +43,11 @@ function myFunction(data){
         list+="<td>" + data.results[i].artistName + "</td>";
         list+="<td><a href ='https://en.wikipedia.org/wiki/" + artist + "'target='_blank' > All about  " +  artist + "</a></td>";
         list+="<td>" + data.results[i].primaryGenreName + "</td>";
-        list+="<td><img src='" + data.results[i].artworkUrl100 + "'></td>";
+        list+="<td><img class='pictures' src='" + data.results[i].artworkUrl100 + "'></td>";
         list+="<td><a href ='" + data.results[i].collectionViewUrl + "' target='_blank'>" + data.results[i].collectionName + "</a></td>";
         list+="<td>" + data.results[i].trackName + "</td>";
-        list+="<td>" + data.results[i].collectionPrice + "</td>";
-        list+="<td>" + data.results[i].currency + "</td>";
+        list+="<td>" + data.results[i].collectionPrice + " " + data.results[i].currency + "</td>";
+
         list+="<td><a href ='https://genius.com/artists/" + artist + "'target='_blank' > Suggestions of  " +  artist + "</a></td>";
         list+="<td>" + "<audio controls='true'  src='" + data.results[i].previewUrl+ "' id= 'audio' type='audio/n4a'></audio>" + "</td>";
         list+="<td>" + data.results[i].collectionExplicitness + "</td>";
